@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hms-brain-activity
+    env: python
+    buildCommand: pip install -r requirement.txt
+    startCommand: gunicorn wsgi:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.7
