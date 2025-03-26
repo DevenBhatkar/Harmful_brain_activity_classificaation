@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block title %}Analyze Spectrogram{% endblock %}
+
+{% block content %}
+<!-- Hero Section with Parallax -->
+<div class="parallax-section parallax-brain" style="min-height: 200px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h1 class="display-4 text-white mb-0" data-aos="fade-down">Analyze Spectrogram</h1>
+                <p class="lead text-white" data-aos="fade-up">Powered by trained machine learning models</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8" data-aos="fade-up">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0"><i class="fas fa-microscope me-2"></i>Analyze Brain Activity</h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info mb-4">
+                        <i class="fas fa-robot me-2"></i> This analysis is performed using trained machine learning models that have been optimized for brain activity classification.
+                    </div>
+                    
+                    <!-- Tabs for different analysis methods -->
+                    <ul class="nav nav-tabs mb-4" id="analysisTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="id-tab" data-bs-toggle="tab" data-bs-target="#id-content" type="button" role="tab" aria-controls="id-content" aria-selected="true">
+                                <i class="fas fa-fingerprint me-2"></i>Analyze by ID
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="upload-tab" data-bs-toggle="tab" data-bs-target="#upload-content" type="button" role="tab" aria-controls="upload-content" aria-selected="false">
+                                <i class="fas fa-upload me-2"></i>Upload Parquet File
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="analysisTabsContent">
+                        <!-- Analyze by ID Tab -->
+                        <div class="tab-pane fade show active" id="id-content" role="tabpanel" aria-labelledby="id-tab">
+                            <form method="POST" action="{{ url_for('analyze') }}">
+                                <input type="hidden" name="analysis_type" value="id">
+                                <div class="form-group mb-4">
+                                    <label for="spectrogram_id" class="form-label">Spectrogram ID:</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-fingerprint"></i></span>
+                                        <input type="text" class="form-control" id="spectrogram_id" name="spectrogram_id" required
+                                            placeholder="Enter spectrogram ID (e.g., 853520)">
+                                    </div>
+                                    <small class="form-text text-muted mt-2">
+                                        <i class="fas fa-info-circle me-1"></i> Enter the ID of the spectrogram you want to analyze. The ID should be a number like 853520.
+                                    </small>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-search me-2"></i> Analyze Spectrogram
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!-- Upload File Tab -->
+                        <div class="tab-pane fade" id="upload-content" role="tabpanel" aria-labelledby="upload-tab">
+                            <form method="POST" action="{{ url_for('analyze_upload') }}" enctype="multipart/form-data">
+                                <div class="form-group mb-4">
+                                    <label for="parquet_file" class="form-label">Upload Parquet File:</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-file-upload"></i></span>
+                                        <input type="file" class="form-control" id="parquet_file" name="parquet_file" required
+                                            accept=".parquet">
+                                    </div>
+                                    <small class="form-text text-muted mt-2">
+                                        <i class="fas fa-info-circle me-1"></i> Upload a parquet file containing spectrogram data for analysis.
+                                    </small>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="patient_name" class="form-label">Patient Name (Optional):</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        <input type="text" class="form-control" id="patient_name" name="patient_name"
+                                            placeholder="Enter patient name">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="patient_age" class="form-label">Patient Age (Optional):</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-birthday-cake"></i></span>
+                                        <input type="number" class="form-control" id="patient_age" name="patient_age"
+                                            placeholder="Enter patient age" min="0" max="120">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="patient_gender" class="form-label">Patient Gender (Optional):</label>
+                                    <select class="form-select" id="patient_gender" name="patient_gender">
+                                        <option value="">Select gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-upload me-2"></i> Upload and Analyze
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Example Section -->
+            <div class="card mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-header">
+                    <h4 class="mb-0"><i class="fas fa-lightbulb me-2"></i>Available Test Spectrogram</h4>
+                </div>
+                <div class="card-body">
+                    <p>You can use the following test spectrogram ID for analysis:</p>
+                    <div class="d-flex align-items-center">
+                        <div class="badge bg-primary p-2 me-3">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">853520</h5>
+                            <small class="text-muted">Test spectrogram from the dataset</small>
+                        </div>
+                        <button class="btn btn-sm btn-outline-primary ms-auto copy-id" 
+                                data-id="853520" onclick="copyToInput('853520')">
+                            <i class="fas fa-copy me-1"></i> Use this ID
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-cogs me-2"></i>About Our Machine Learning Models</h4>
+            </div>
+            <div class="card-body">
+                <p>This tool uses trained machine learning models to analyze EEG spectrograms and identify patterns associated with harmful brain activity. Our system can detect various conditions including:</p>
+                <ul>
+                    <li><strong>Seizure</strong> - Characterized by high energy in higher frequency bands</li>
+                    <li><strong>LPD (Lateralized Periodic Discharges)</strong> - Asymmetric, high energy in band 1, often with high skew</li>
+                    <li><strong>GPD (Generalized Periodic Discharges)</strong> - Symmetric, high energy in band 1, low skew</li>
+                    <li><strong>LRDA (Lateralized Rhythmic Delta Activity)</strong> - Asymmetric, high energy in band 0, high skew</li>
+                    <li><strong>GRDA (Generalized Rhythmic Delta Activity)</strong> - Symmetric, high energy in band 0, low skew</li>
+                    <li><strong>Other</strong> - Other abnormal patterns or mixed patterns</li>
+                </ul>
+                <p>The analysis provides probability scores for each condition and identifies the most important features contributing to the classification.</p>
+                <div class="alert alert-success mt-3">
+                    <i class="fas fa-info-circle me-2"></i> Our models have been trained on a comprehensive dataset of EEG spectrograms to provide accurate and reliable predictions.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function copyToInput(id) {
+        document.getElementById('spectrogram_id').value = id;
+        // Switch to ID tab if not already active
+        document.getElementById('id-tab').click();
+    }
+</script>
+{% endblock %} 

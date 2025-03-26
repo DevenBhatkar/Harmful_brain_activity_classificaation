@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">Analysis Results</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Spectrogram Details</h4>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Spectrogram ID:</th>
+                                    <td>{{ spectrogram_id }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Analysis Time:</th>
+                                    <td>{{ timestamp }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Primary Prediction</h4>
+                            <div class="alert alert-success">
+                                <h5 class="alert-heading">Most Likely Condition:</h5>
+                                <p class="mb-0"><strong>{{ most_likely_condition }}</strong></p>
+                                <p class="mb-0">Confidence: {{ confidence }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0">Probability Distribution</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Condition</th>
+                                    <th>Probability</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for prob in probabilities %}
+                                <tr>
+                                    <td>{{ prob.name }}</td>
+                                    <td>{{ prob.probability }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0">Key Features</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Importance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for feature in top_features %}
+                                <tr>
+                                    <td>{{ feature.name }}</td>
+                                    <td>{{ feature.importance }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if plot_path %}
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Prediction Visualization</h4>
+                </div>
+                <div class="card-body text-center">
+                    <img src="{{ plot_path }}" class="img-fluid" alt="Prediction Chart">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <a href="{{ url_for('analyze') }}" class="btn btn-primary me-2">Analyze Another Spectrogram</a>
+            <a href="{{ url_for('history') }}" class="btn btn-secondary">View History</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        border-radius: 10px;
+    }
+    .card-header {
+        border-radius: 10px 10px 0 0 !important;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+    .alert {
+        border-radius: 8px;
+    }
+    .btn {
+        border-radius: 20px;
+        padding: 8px 20px;
+    }
+    img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+</style>
+{% endblock %} 

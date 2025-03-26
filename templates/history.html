@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block title %}Analysis History{% endblock %}
+
+{% block content %}
+<!-- Hero Section with Parallax -->
+<div class="parallax-section parallax-brain" style="min-height: 200px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h1 class="display-4 text-white mb-0" data-aos="fade-down">Analysis History</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-10">
+            <div class="card" data-aos="fade-up">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="mb-0"><i class="fas fa-history me-2"></i>Your Analysis History</h2>
+                        <a href="{{ url_for('analyze') }}" class="btn btn-light">
+                            <i class="fas fa-plus me-1"></i> New Analysis
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="lead">View your complete history of brain activity analyses. Click on any result to see the detailed report.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-header">
+                    <h3 class="h5 mb-0"><i class="fas fa-list-alt me-2"></i>All Analyses</h3>
+                </div>
+                <div class="card-body">
+                    {% if results %}
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th><i class="fas fa-fingerprint me-1"></i>Spectrogram ID</th>
+                                        <th><i class="fas fa-brain me-1"></i>Most Likely Condition</th>
+                                        <th><i class="fas fa-percentage me-1"></i>Confidence</th>
+                                        <th><i class="fas fa-calendar-alt me-1"></i>Date</th>
+                                        <th><i class="fas fa-cogs me-1"></i>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for result in results %}
+                                        <tr>
+                                            <td>{{ result.spectrogram_id }}</td>
+                                            <td>
+                                                <span class="badge bg-primary">{{ result.most_likely_class }}</span>
+                                                {{ result.most_likely_condition }}
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height: 20px;">
+                                                    <div class="progress-bar bg-success" role="progressbar" 
+                                                         style="width: {{ result.confidence }}%;" 
+                                                         aria-valuenow="{{ result.confidence }}" 
+                                                         aria-valuemin="0" 
+                                                         aria-valuemax="100">
+                                                        {{ "%.2f"|format(result.confidence) }}%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>{{ result.created_at }}</td>
+                                            <td>
+                                                <a href="{{ url_for('view_result', result_id=result.id) }}" class="btn btn-sm btn-primary">
+                                                    <i class="fas fa-eye me-1"></i>View
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-chart-bar fa-4x mb-3 text-muted"></i>
+                            <h3 class="h5">No Analysis History</h3>
+                            <p class="mb-4">You haven't analyzed any spectrograms yet.</p>
+                            <a href="{{ url_for('analyze') }}" class="btn btn-primary">
+                                <i class="fas fa-plus me-1"></i> Analyze Your First Spectrogram
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if results %}
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-5">
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <h3 class="h5 mb-0"><i class="fas fa-chart-pie me-2"></i>Analysis by Condition</h3>
+                    </div>
+                    <div class="card-body">
+                        {% set conditions = {} %}
+                        {% for result in results %}
+                            {% if result.most_likely_condition in conditions %}
+                                {% set _ = conditions.update({result.most_likely_condition: conditions[result.most_likely_condition] + 1}) %}
+                            {% else %}
+                                {% set _ = conditions.update({result.most_likely_condition: 1}) %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% for condition, count in conditions.items() %}
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span><strong>{{ condition }}</strong></span>
+                                    <span>{{ count }} ({{ "%.1f"|format(count / results|length * 100) }}%)</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: {{ (count / results|length * 100)|string }}%" 
+                                         aria-valuenow="{{ (count / results|length * 100)|string }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-5">
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <h3 class="h5 mb-0"><i class="fas fa-clock me-2"></i>Recent Activity</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            {% for result in results[:5] %}
+                                <a href="{{ url_for('view_result', result_id=result.id) }}" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">
+                                            <span class="badge bg-primary me-2">{{ result.most_likely_class }}</span>
+                                            {{ result.most_likely_condition }}
+                                        </h5>
+                                        <small>{{ result.created_at }}</small>
+                                    </div>
+                                    <p class="mb-1"><i class="fas fa-fingerprint me-1"></i> Spectrogram ID: {{ result.spectrogram_id }}</p>
+                                    <div class="progress mt-2" style="height: 10px;">
+                                        <div class="progress-bar bg-success" role="progressbar" 
+                                             style="width: {{ result.confidence }}%;" 
+                                             aria-valuenow="{{ result.confidence }}" 
+                                             aria-valuemin="0" 
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <small class="d-block mt-1">Confidence: {{ "%.2f"|format(result.confidence) }}%</small>
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="row justify-content-center mt-4 mb-5">
+        <div class="col-md-10">
+            <div class="d-flex justify-content-between">
+                <a href="{{ url_for('dashboard') }}" class="btn btn-outline-primary">
+                    <i class="fas fa-tachometer-alt me-2"></i>Back to Dashboard
+                </a>
+                <a href="{{ url_for('analyze') }}" class="btn btn-primary">
+                    <i class="fas fa-microscope me-2"></i>Analyze a Spectrogram
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

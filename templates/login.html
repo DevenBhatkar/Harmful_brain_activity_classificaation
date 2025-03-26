@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<!-- Hero Section with Parallax -->
+<div class="parallax-section parallax-brain" style="min-height: 200px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h1 class="display-4 text-white mb-0" data-aos="fade-down">Login</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6" data-aos="fade-up">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0"><i class="fas fa-sign-in-alt me-2"></i>Login to Your Account</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="{{ url_for('login') }}">
+                        <div class="form-group mb-4">
+                            <label for="email" class="form-label">Email Address:</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input type="email" class="form-control" id="email" name="email" required
+                                    placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="password" class="form-label">Password:</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                <input type="password" class="form-control" id="password" name="password" required
+                                    placeholder="Enter your password">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-sign-in-alt me-2"></i> Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <p class="mb-0">Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+                </div>
+            </div>
+            
+            <!-- Demo Credentials -->
+            <div class="card mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-header">
+                    <h4 class="mb-0"><i class="fas fa-info-circle me-2"></i>Demo Credentials</h4>
+                </div>
+                <div class="card-body">
+                    <p>You can use the following credentials for testing:</p>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="badge bg-primary p-2 me-3">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0">Email: demo@example.com</h6>
+                        </div>
+                        <button class="btn btn-sm btn-outline-primary ms-auto" 
+                                onclick="fillDemo('demo@example.com', 'password123')">
+                            <i class="fas fa-fill me-1"></i> Use Demo
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="badge bg-primary p-2 me-3">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0">Password: password123</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function fillDemo(email, password) {
+        document.getElementById('email').value = email;
+        document.getElementById('password').value = password;
+    }
+</script>
+{% endblock %} 

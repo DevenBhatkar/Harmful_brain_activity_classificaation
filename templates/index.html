@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block title %}Brain Activity Classification{% endblock %}
+
+{% block content %}
+<!-- Hero Section with Parallax -->
+<div class="parallax-section parallax-brain">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h1 class="display-3 text-white mb-4" data-aos="fade-down">Advanced Brain Activity Classification</h1>
+                <p class="lead text-white mb-5" data-aos="fade-up" data-aos-delay="200">
+                    Analyze EEG spectrograms with cutting-edge AI to identify harmful brain activity patterns
+                </p>
+                <a href="{{ url_for('analyze') }}" class="btn btn-light btn-lg" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-microscope me-2"></i> Start Analysis
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h2 class="display-4 mb-4" data-aos="fade-up">Brain Activity Classification</h2>
+            <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">
+                Welcome to the Brain Activity Classification System. This tool helps analyze EEG spectrograms 
+                to identify different types of brain activity patterns with high accuracy.
+            </p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row mt-4">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-brain fa-3x text-primary"></i>
+                    </div>
+                    <h4>Advanced Analysis</h4>
+                    <p class="text-muted">
+                        Our system uses machine learning algorithms to analyze EEG spectrograms and identify patterns associated with harmful brain activity.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-chart-pie fa-3x text-primary"></i>
+                    </div>
+                    <h4>Detailed Results</h4>
+                    <p class="text-muted">
+                        Get comprehensive results including probability scores for different conditions and feature importance analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-history fa-3x text-primary"></i>
+                    </div>
+                    <h4>History Tracking</h4>
+                    <p class="text-muted">
+                        Keep track of all your analyses with our history feature, allowing you to review past results and compare findings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conditions Section -->
+    <div class="row mt-5">
+        <div class="col-md-12 text-center mb-4" data-aos="fade-up">
+            <h2 class="h2">Detectable Conditions</h2>
+            <p class="text-muted">Our system can detect the following brain activity patterns:</p>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-primary rounded-pill me-3">1</span>
+                                    <span>Seizure</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-primary rounded-pill me-3">2</span>
+                                    <span>Lateralized Periodic Discharges (LPD)</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-primary rounded-pill me-3">3</span>
+                                    <span>Generalized Periodic Discharges (GPD)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-primary rounded-pill me-3">4</span>
+                                    <span>Lateralized Rhythmic Delta Activity (LRDA)</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-primary rounded-pill me-3">5</span>
+                                    <span>Generalized Rhythmic Delta Activity (GRDA)</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-primary rounded-pill me-3">6</span>
+                                    <span>Other Abnormal Patterns</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row mt-5 mb-5">
+        <div class="col-md-12 text-center" data-aos="fade-up">
+            <div class="card bg-primary text-white">
+                <div class="card-body py-5">
+                    <h3 class="mb-4">Ready to analyze your EEG data?</h3>
+                    <p class="mb-4">Start analyzing your spectrograms now to identify harmful brain activity patterns.</p>
+                    <a href="{{ url_for('analyze') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-microscope me-2"></i> Start Analysis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

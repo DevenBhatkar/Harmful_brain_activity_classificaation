@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<!-- Hero Section with Parallax -->
+<div class="parallax-section parallax-brain" style="min-height: 200px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h1 class="display-4 text-white mb-0" data-aos="fade-down">Your Dashboard</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Welcome Card -->
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card mb-4" data-aos="fade-up">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0"><i class="fas fa-user-circle me-2"></i>Welcome, {{ session.name }}</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h5 class="mb-0"><i class="fas fa-id-card me-2"></i>User Information</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p><i class="fas fa-user me-2"></i><strong>Name:</strong> {{ session.name }}</p>
+                                    <p><i class="fas fa-envelope me-2"></i><strong>Email:</strong> {{ session.email }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0"><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-grid gap-2">
+                                        <a href="{{ url_for('analyze') }}" class="btn btn-primary">
+                                            <i class="fas fa-microscope me-2"></i>Analyze a Spectrogram
+                                        </a>
+                                        <a href="{{ url_for('history') }}" class="btn btn-outline-primary">
+                                            <i class="fas fa-history me-2"></i>View Analysis History
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Results -->
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0"><i class="fas fa-chart-line me-2"></i>Recent Analysis Results</h2>
+                </div>
+                <div class="card-body">
+                    {% if results %}
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th><i class="fas fa-fingerprint me-1"></i>Spectrogram ID</th>
+                                    <th><i class="fas fa-brain me-1"></i>Most Likely Condition</th>
+                                    <th><i class="fas fa-percentage me-1"></i>Confidence</th>
+                                    <th><i class="fas fa-calendar-alt me-1"></i>Date</th>
+                                    <th><i class="fas fa-cogs me-1"></i>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for result in results[:5] %}
+                                <tr>
+                                    <td>{{ result.spectrogram_id }}</td>
+                                    <td>
+                                        <span class="badge bg-primary">{{ result.most_likely_class }}</span>
+                                        {{ result.most_likely_condition }}
+                                    </td>
+                                    <td>
+                                        <div class="progress" style="height: 20px;">
+                                            <div class="progress-bar bg-success" role="progressbar" 
+                                                style="width: {{ result.confidence }}%;" 
+                                                aria-valuenow="{{ result.confidence }}" 
+                                                aria-valuemin="0" 
+                                                aria-valuemax="100">
+                                                {{ "%.2f"|format(result.confidence) }}%
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>{{ result.created_at }}</td>
+                                    <td>
+                                        <a href="{{ url_for('view_result', result_id=result.id) }}" class="btn btn-sm btn-primary">
+                                            <i class="fas fa-eye me-1"></i>View
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% if results|length > 5 %}
+                    <div class="text-center mt-4">
+                        <a href="{{ url_for('history') }}" class="btn btn-outline-primary">
+                            <i class="fas fa-list-alt me-2"></i>View All Results ({{ results|length }})
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% else %}
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <p class="mb-0">You haven't analyzed any spectrograms yet. 
+                            <a href="{{ url_for('analyze') }}" class="alert-link">Analyze a spectrogram</a> to get started.
+                        </p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

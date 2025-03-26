@@ -1,0 +1,3648 @@
+[
+    {
+        "spectrogram_id": "44317091",
+        "predictions": {
+            "seizure_vote": 2.0468649224562148,
+            "lpd_vote": 1.1585361200339772,
+            "gpd_vote": 0.38909906256474974,
+            "lrda_vote": 0.5081466669832831,
+            "grda_vote": 0.7106942410463811,
+            "other_vote": 1.8597877352960892
+        },
+        "probabilities": {
+            "seizure": 30.67324188751653,
+            "lpd": 17.36121336359812,
+            "gpd": 5.830834039567553,
+            "lrda": 7.614818867485365,
+            "grda": 10.650090352577696,
+            "other": 27.86980148925474
+        },
+        "most_likely": "seizure",
+        "confidence": 30.67324188751653,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 40.9372984491243,
+            "Sleep Disorder": 14.213884820927623,
+            "Encephalitis": 40.9372984491243,
+            "Traumatic Brain Injury": 34.75608360101931
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-14 14:05:20",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "25b59cf4-295b-4bae-982a-af4faa389233",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-14 14:05:20"
+    },
+    {
+        "spectrogram_id": "1353070",
+        "predictions": {
+            "seizure_vote": 0.14517252438708353,
+            "lpd_vote": 2.0325938889257325,
+            "gpd_vote": 2.13160661136797,
+            "lrda_vote": 0.41064542964381884,
+            "grda_vote": 0.5137673603850785,
+            "other_vote": 4.743945854213276
+        },
+        "probabilities": {
+            "seizure": 1.4549652085678317,
+            "lpd": 20.371302379843808,
+            "gpd": 21.36363937313685,
+            "lrda": 4.115619093293834,
+            "grda": 5.149139879009563,
+            "other": 47.54533406614811
+        },
+        "most_likely": "other",
+        "confidence": 47.54533406614811,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 8.212908592876376,
+            "Sleep Disorder": 42.632132227359406,
+            "Parkinson's Disease": 31.97409917051955,
+            "Encephalitis": 40.651877778514645,
+            "Traumatic Brain Injury": 4.355175731612506
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 14:04:54",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "4fff5c82-0a77-40ef-9f62-7d33aafbc725",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 14:04:54"
+    },
+    {
+        "spectrogram_id": "1910466",
+        "predictions": {
+            "seizure_vote": 0.3843074312877112,
+            "lpd_vote": 0.7866084142884887,
+            "gpd_vote": 0.23098738626917784,
+            "lrda_vote": 0.8897605682136925,
+            "grda_vote": 0.7588539923194552,
+            "other_vote": 2.124173232888834
+        },
+        "probabilities": {
+            "seizure": 7.4266739678018805,
+            "lpd": 15.201070178829609,
+            "gpd": 4.46379088415706,
+            "lrda": 17.194467531860447,
+            "grda": 14.664720823215676,
+            "other": 41.04927661413533
+        },
+        "most_likely": "other",
+        "confidence": 41.04927661413533,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 17.79521136427385,
+            "Sleep Disorder": 15.177079846389104,
+            "Encephalitis": 17.79521136427385,
+            "Traumatic Brain Injury": 11.529222938631337
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 14:11:20",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "97e6fe5a-0c16-4818-8ac4-2c269c78c62f",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 14:11:20"
+    },
+    {
+        "spectrogram_id": "1084844",
+        "predictions": {
+            "seizure_vote": 0.36766940561803246,
+            "lpd_vote": 0.96999734551271,
+            "gpd_vote": 0.23292126659765144,
+            "lrda_vote": 1.7898757930686309,
+            "grda_vote": 0.6841646911303588,
+            "other_vote": 1.7525873704148014
+        },
+        "probabilities": {
+            "seizure": 6.342172065251852,
+            "lpd": 16.73212395178261,
+            "gpd": 4.0178125453097335,
+            "lrda": 30.8747480253049,
+            "grda": 11.801607982107857,
+            "other": 30.23153543024305
+        },
+        "most_likely": "lrda",
+        "confidence": 30.8747480253049,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 35.79751586137262,
+            "Sleep Disorder": 13.683293822607176,
+            "Encephalitis": 35.79751586137262,
+            "Traumatic Brain Injury": 11.030082168540973
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 22:02:44",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "c2292985-28e0-4626-9756-b9f7549590d1",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 22:02:44"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 0.22702399500842677,
+            "lpd_vote": 0.34810756932891246,
+            "gpd_vote": 0.1346708276825552,
+            "lrda_vote": 0.21365932387716638,
+            "grda_vote": 0.31277937344693124,
+            "other_vote": 1.691454531940967
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 0.6810719850252803,
+                "xgb": 0,
+                "lgb": 0
+            },
+            "lpd_vote": {
+                "rf": 1.0443227079867374,
+                "xgb": 0,
+                "lgb": 0
+            },
+            "gpd_vote": {
+                "rf": 0.4040124830476656,
+                "xgb": 0,
+                "lgb": 0
+            },
+            "lrda_vote": {
+                "rf": 0.6409779716314992,
+                "xgb": 0,
+                "lgb": 0
+            },
+            "grda_vote": {
+                "rf": 0.9383381203407937,
+                "xgb": 0,
+                "lgb": 0
+            },
+            "other_vote": {
+                "rf": 5.074363595822901,
+                "xgb": 0,
+                "lgb": 0
+            }
+        },
+        "probabilities": {
+            "seizure": 7.754357842321956,
+            "lpd": 11.890155752466125,
+            "gpd": 4.599891693093712,
+            "lrda": 7.297866701846272,
+            "grda": 10.683466244679256,
+            "other": 57.77426176559267
+        },
+        "most_likely": "other",
+        "confidence": 57.77426176559267,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 4.540479900168536,
+            "Sleep Disorder": 6.255587468938625,
+            "Encephalitis": 6.962151386578249,
+            "Traumatic Brain Injury": 6.810719850252803
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 22:14:16",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "057195b2-196f-4f82-9f82-74a7f2b31c51",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 22:14:16"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 0.6810719850252805,
+            "lpd_vote": 1.0443227079867372,
+            "gpd_vote": 0.4040124830476656,
+            "lrda_vote": 0.6409779716314994,
+            "grda_vote": 0.9383381203407936,
+            "other_vote": 5.074363595822901
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 0.6810719850252805,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "majority_vote": 1,
+                "mean": 0.6810719850252805,
+                "weighted_mean": 0.6810719850252805
+            },
+            "lpd_vote": {
+                "rf": 1.0443227079867372,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "majority_vote": 1,
+                "mean": 1.0443227079867372,
+                "weighted_mean": 1.0443227079867372
+            },
+            "gpd_vote": {
+                "rf": 0.4040124830476656,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "majority_vote": 0,
+                "mean": 0.4040124830476656,
+                "weighted_mean": 0.4040124830476656
+            },
+            "lrda_vote": {
+                "rf": 0.6409779716314994,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "majority_vote": 1,
+                "mean": 0.6409779716314994,
+                "weighted_mean": 0.6409779716314994
+            },
+            "grda_vote": {
+                "rf": 0.9383381203407936,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "majority_vote": 1,
+                "mean": 0.9383381203407936,
+                "weighted_mean": 0.9383381203407936
+            },
+            "other_vote": {
+                "rf": 5.074363595822901,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "majority_vote": 1,
+                "mean": 5.074363595822901,
+                "weighted_mean": 5.074363595822901
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 7.754357842321959,
+            "lpd": 11.890155752466123,
+            "gpd": 4.599891693093713,
+            "lrda": 7.297866701846274,
+            "grda": 10.683466244679254,
+            "other": 57.77426176559267
+        },
+        "most_likely": "other",
+        "confidence": 57.77426176559267,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 13.621439700505611,
+            "Sleep Disorder": 18.76676240681587,
+            "Encephalitis": 20.886454159734743,
+            "Traumatic Brain Injury": 20.432159550758417
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 22:21:22",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "471e12e2-4dec-4807-abe7-f14b695ae2d7",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 22:21:22"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 0.6810719850252805,
+            "lpd_vote": 1.0443227079867372,
+            "gpd_vote": 0.4040124830476657,
+            "lrda_vote": 0.6409779716314994,
+            "grda_vote": 0.9383381203407936,
+            "other_vote": 5.074363595822901
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 0.6810719850252805,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 0.6810719850252805,
+                "weighted_mean": 0.6810719850252805,
+                "majority_vote": 1
+            },
+            "lpd_vote": {
+                "rf": 1.0443227079867372,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 1.0443227079867372,
+                "weighted_mean": 1.0443227079867372,
+                "majority_vote": 1
+            },
+            "gpd_vote": {
+                "rf": 0.4040124830476657,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 0.4040124830476657,
+                "weighted_mean": 0.4040124830476657,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.6409779716314994,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 0.6409779716314994,
+                "weighted_mean": 0.6409779716314994,
+                "majority_vote": 1
+            },
+            "grda_vote": {
+                "rf": 0.9383381203407936,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 0.9383381203407936,
+                "weighted_mean": 0.9383381203407936,
+                "majority_vote": 1
+            },
+            "other_vote": {
+                "rf": 5.074363595822901,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 5.074363595822901,
+                "weighted_mean": 5.074363595822901,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 7.754357842321959,
+            "lpd": 11.890155752466123,
+            "gpd": 4.5998916930937135,
+            "lrda": 7.297866701846274,
+            "grda": 10.683466244679254,
+            "other": 57.77426176559267
+        },
+        "most_likely": "other",
+        "confidence": 57.77426176559267,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 13.621439700505611,
+            "Sleep Disorder": 18.76676240681587,
+            "Encephalitis": 20.886454159734743,
+            "Traumatic Brain Injury": 20.432159550758417
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 22:26:22",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "c6ea8f8f-82a1-4206-8c66-75f85192c860",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 22:26:22"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 0.6810719850252803,
+            "lpd_vote": 1.0443227079867372,
+            "gpd_vote": 0.4040124830476656,
+            "lrda_vote": 0.6409779716314992,
+            "grda_vote": 0.9383381203407937,
+            "other_vote": 5.074363595822901
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 0.6810719850252803,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 0.6810719850252803,
+                "weighted_mean": 0.6810719850252803,
+                "majority_vote": 1
+            },
+            "lpd_vote": {
+                "rf": 1.0443227079867372,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 1.0443227079867372,
+                "weighted_mean": 1.0443227079867372,
+                "majority_vote": 1
+            },
+            "gpd_vote": {
+                "rf": 0.4040124830476656,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 0.4040124830476656,
+                "weighted_mean": 0.4040124830476656,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.6409779716314992,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 0.6409779716314992,
+                "weighted_mean": 0.6409779716314992,
+                "majority_vote": 1
+            },
+            "grda_vote": {
+                "rf": 0.9383381203407937,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 0.9383381203407937,
+                "weighted_mean": 0.9383381203407937,
+                "majority_vote": 1
+            },
+            "other_vote": {
+                "rf": 5.074363595822901,
+                "xgb": 0.0,
+                "lgb": 0.0,
+                "mean": 5.074363595822901,
+                "weighted_mean": 5.074363595822901,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 7.754357842321959,
+            "lpd": 11.890155752466125,
+            "gpd": 4.5998916930937135,
+            "lrda": 7.297866701846273,
+            "grda": 10.683466244679257,
+            "other": 57.774261765592684
+        },
+        "most_likely": "other",
+        "confidence": 57.774261765592684,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 13.621439700505606,
+            "Sleep Disorder": 18.76676240681587,
+            "Encephalitis": 20.886454159734743,
+            "Traumatic Brain Injury": 20.43215955075841
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 22:28:53",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "a07551ac-8da7-4c91-9ed5-1e51b01fddfc",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 22:28:53"
+    },
+    {
+        "spectrogram_id": "32075520",
+        "predictions": {
+            "seizure_vote": 1.0814157820638863,
+            "lpd_vote": 0.5132802325345954,
+            "gpd_vote": 0.16724029924905415,
+            "lrda_vote": 0.6171908979507191,
+            "grda_vote": 0.5219433362796565,
+            "other_vote": 1.251022426768052
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.244247346191659,
+                "xgb": 1,
+                "lgb": 1,
+                "mean": 1.0814157820638863,
+                "weighted_mean": 1.0814157820638863,
+                "majority_vote": 1
+            },
+            "lpd_vote": {
+                "rf": 0.4656998530101597,
+                "xgb": 0.5158500017899028,
+                "lgb": 0.5582908428037237,
+                "mean": 0.5132802325345954,
+                "weighted_mean": 0.5132802325345954,
+                "majority_vote": 1
+            },
+            "gpd_vote": {
+                "rf": 0.15909082277052916,
+                "xgb": 0.08647963200771398,
+                "lgb": 0.2561504429689193,
+                "mean": 0.16724029924905415,
+                "weighted_mean": 0.16724029924905415,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.6306871905767908,
+                "xgb": 0.5690982413708466,
+                "lgb": 0.6517872619045199,
+                "mean": 0.6171908979507191,
+                "weighted_mean": 0.6171908979507191,
+                "majority_vote": 1
+            },
+            "grda_vote": {
+                "rf": 0.5293227089432814,
+                "xgb": 0.5966708831906471,
+                "lgb": 0.4398364167050413,
+                "mean": 0.5219433362796565,
+                "weighted_mean": 0.5219433362796565,
+                "majority_vote": 1
+            },
+            "other_vote": {
+                "rf": 1.7530672803041563,
+                "xgb": 1,
+                "lgb": 1,
+                "mean": 1.251022426768052,
+                "weighted_mean": 1.251022426768052,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 26.045076269131602,
+            "lpd": 12.361963849175062,
+            "gpd": 4.027855355412857,
+            "lrda": 14.864573160807314,
+            "grda": 12.57060811117843,
+            "other": 30.129923254294738
+        },
+        "most_likely": "other",
+        "confidence": 30.129923254294738,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 21.628315641277727,
+            "Sleep Disorder": 10.43886672559313,
+            "Encephalitis": 21.628315641277727,
+            "Traumatic Brain Injury": 15.398406976037863
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 22:32:34",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "dfa4bd51-9fe9-4866-86b0-a78a44fb4cb3",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 22:32:34"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 0,
+            "lpd_vote": 0,
+            "gpd_vote": 0,
+            "lrda_vote": 0,
+            "grda_vote": 0,
+            "other_vote": 0
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 16.666666666666664,
+            "lpd": 16.666666666666664,
+            "gpd": 16.666666666666664,
+            "lrda": 16.666666666666664,
+            "grda": 16.666666666666664,
+            "other": 16.666666666666664
+        },
+        "most_likely": "seizure",
+        "confidence": 16.666666666666664,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {},
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 22:40:51",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "026a60a2-0f7a-43b0-b0a2-6383b2368a52",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 22:40:51"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 0,
+            "lpd_vote": 0,
+            "gpd_vote": 0,
+            "lrda_vote": 0,
+            "grda_vote": 0,
+            "other_vote": 0
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 0,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 0,
+                "weighted_mean": 0,
+                "majority_vote": 0
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 16.666666666666664,
+            "lpd": 16.666666666666664,
+            "gpd": 16.666666666666664,
+            "lrda": 16.666666666666664,
+            "grda": 16.666666666666664,
+            "other": 16.666666666666664
+        },
+        "most_likely": "seizure",
+        "confidence": 16.666666666666664,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {},
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 22:46:22",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "bd4de9a5-cc54-493c-9a37-2f72eb3e53c0",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 22:46:22"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 1.5846714750639257,
+            "lpd_vote": 1.943337061377743,
+            "gpd_vote": 1.954935415908711,
+            "lrda_vote": 0.45584822768458305,
+            "grda_vote": 0.6098816829911444,
+            "other_vote": 5.749704787919684
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.5846714750639257,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.5846714750639257,
+                "weighted_mean": 1.5846714750639257,
+                "majority_vote": 1
+            },
+            "lpd_vote": {
+                "rf": 3.5264495777535023,
+                "xgb": 0.36022454500198364,
+                "lgb": -0.581952709381967,
+                "mean": 1.943337061377743,
+                "weighted_mean": 1.943337061377743,
+                "majority_vote": 1
+            },
+            "gpd_vote": {
+                "rf": 1.9637107712312147,
+                "xgb": 1.9395052194595337,
+                "lgb": 1.961590257035384,
+                "mean": 1.954935415908711,
+                "weighted_mean": 1.954935415908711,
+                "majority_vote": 1
+            },
+            "lrda_vote": {
+                "rf": 0.5239071463443553,
+                "xgb": 0.3877893090248108,
+                "lgb": -0.17359915028533418,
+                "mean": 0.45584822768458305,
+                "weighted_mean": 0.45584822768458305,
+                "majority_vote": 1
+            },
+            "grda_vote": {
+                "rf": 0.588627362960511,
+                "xgb": 0.7460576295852661,
+                "lgb": 0.49496005642765617,
+                "mean": 0.6098816829911444,
+                "weighted_mean": 0.6098816829911444,
+                "majority_vote": 1
+            },
+            "other_vote": {
+                "rf": 8.570120267451879,
+                "xgb": 5.719785213470459,
+                "lgb": 2.959208882836714,
+                "mean": 5.749704787919684,
+                "weighted_mean": 5.749704787919684,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 12.885206416555233,
+            "lpd": 15.80157121953871,
+            "gpd": 15.895879216227982,
+            "lrda": 3.7065717410605723,
+            "grda": 4.959041352530176,
+            "other": 46.75173005408734
+        },
+        "most_likely": "other",
+        "confidence": 46.75173005408734,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 31.693429501278516,
+            "Sleep Disorder": 39.09870831817422,
+            "Encephalitis": 38.86674122755486,
+            "Traumatic Brain Injury": 47.54014425191777
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:38:31",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "d48d9263-5c48-4914-a25d-a891b5cb9c39",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:38:31"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 1.5846714750639253,
+            "lpd_vote": 1.9433370613777428,
+            "gpd_vote": 1.954935415908711,
+            "lrda_vote": 0.45584822768458305,
+            "grda_vote": 0.6098816829911444,
+            "other_vote": 5.749704787919684
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.5846714750639253,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.5846714750639253,
+                "weighted_mean": 1.5846714750639253,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 3.526449577753502,
+                "xgb": 0.36022454500198364,
+                "lgb": -0.581952709381967,
+                "mean": 1.9433370613777428,
+                "weighted_mean": 1.9433370613777428,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 1.9637107712312147,
+                "xgb": 1.9395052194595337,
+                "lgb": 1.961590257035384,
+                "mean": 1.954935415908711,
+                "weighted_mean": 1.954935415908711,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.5239071463443553,
+                "xgb": 0.3877893090248108,
+                "lgb": -0.17359915028533418,
+                "mean": 0.45584822768458305,
+                "weighted_mean": 0.45584822768458305,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0.588627362960511,
+                "xgb": 0.7460576295852661,
+                "lgb": 0.49496005642765617,
+                "mean": 0.6098816829911444,
+                "weighted_mean": 0.6098816829911444,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 8.570120267451879,
+                "xgb": 5.719785213470459,
+                "lgb": 2.959208882836714,
+                "mean": 5.749704787919684,
+                "weighted_mean": 5.749704787919684,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 12.885206416555228,
+            "lpd": 15.80157121953871,
+            "gpd": 15.895879216227982,
+            "lrda": 3.7065717410605723,
+            "grda": 4.959041352530176,
+            "other": 46.75173005408734
+        },
+        "most_likely": "other",
+        "confidence": 46.75173005408734,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 31.693429501278505,
+            "Sleep Disorder": 39.09870831817422,
+            "Encephalitis": 38.866741227554854,
+            "Traumatic Brain Injury": 47.54014425191776
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:43:57",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "75448bf9-9514-45fb-bf12-fadb6163cb92",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:43:57"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 1.5846714750639257,
+            "lpd_vote": 1.943337061377743,
+            "gpd_vote": 1.954935415908711,
+            "lrda_vote": 0.45584822768458305,
+            "grda_vote": 0.6098816829911444,
+            "other_vote": 5.749704787919683
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.5846714750639257,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.5846714750639257,
+                "weighted_mean": 1.5846714750639257,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 3.5264495777535023,
+                "xgb": 0.36022454500198364,
+                "lgb": -0.581952709381967,
+                "mean": 1.943337061377743,
+                "weighted_mean": 1.943337061377743,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 1.9637107712312147,
+                "xgb": 1.9395052194595337,
+                "lgb": 1.961590257035384,
+                "mean": 1.954935415908711,
+                "weighted_mean": 1.954935415908711,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.5239071463443553,
+                "xgb": 0.3877893090248108,
+                "lgb": -0.17359915028533418,
+                "mean": 0.45584822768458305,
+                "weighted_mean": 0.45584822768458305,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0.588627362960511,
+                "xgb": 0.7460576295852661,
+                "lgb": 0.49496005642765617,
+                "mean": 0.6098816829911444,
+                "weighted_mean": 0.6098816829911444,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 8.570120267451877,
+                "xgb": 5.719785213470459,
+                "lgb": 2.959208882836714,
+                "mean": 5.749704787919683,
+                "weighted_mean": 5.749704787919683,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 12.885206416555233,
+            "lpd": 15.80157121953871,
+            "gpd": 15.895879216227982,
+            "lrda": 3.7065717410605723,
+            "grda": 4.959041352530176,
+            "other": 46.75173005408733
+        },
+        "most_likely": "other",
+        "confidence": 46.75173005408733,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 31.693429501278516,
+            "Sleep Disorder": 39.09870831817422,
+            "Encephalitis": 38.86674122755486,
+            "Traumatic Brain Injury": 47.54014425191777
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:43:58",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "f1297b7e-7c34-4814-bcbb-71761e05c8d5",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:43:58"
+    },
+    {
+        "spectrogram_id": "1730458",
+        "predictions": {
+            "seizure_vote": 1.5288846796036386,
+            "lpd_vote": 1.5512381968508493,
+            "gpd_vote": 1.4429189379095437,
+            "lrda_vote": 0.5634868583603463,
+            "grda_vote": 0.6016111118990884,
+            "other_vote": 5.327318510453831
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.5288846796036386,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.5288846796036386,
+                "weighted_mean": 1.5288846796036386,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 3.220141959537396,
+                "xgb": 0.08765910565853119,
+                "lgb": 1.3459135253566203,
+                "mean": 1.5512381968508493,
+                "weighted_mean": 1.5512381968508493,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 1.8063821060319025,
+                "xgb": 0.6918822526931763,
+                "lgb": 1.830492455003553,
+                "mean": 1.4429189379095437,
+                "weighted_mean": 1.4429189379095437,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.5634868583603463,
+                "xgb": -0.019022295251488686,
+                "lgb": -0.061482052837689635,
+                "mean": 0.5634868583603463,
+                "weighted_mean": 0.5634868583603463,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0.6016111118990884,
+                "xgb": -0.054867617785930634,
+                "lgb": -0.09588918144045679,
+                "mean": 0.6016111118990884,
+                "weighted_mean": 0.6016111118990884,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 8.941009921644351,
+                "xgb": 2.499786615371704,
+                "lgb": 4.5411589943454365,
+                "mean": 5.327318510453831,
+                "weighted_mean": 5.327318510453831,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 13.879446852310107,
+            "lpd": 14.082375469970984,
+            "gpd": 13.099036819506368,
+            "lrda": 5.11541910709392,
+            "grda": 5.461516859157305,
+            "other": 48.36220489196131
+        },
+        "most_likely": "other",
+        "confidence": 48.36220489196131,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 30.577693592072773,
+            "Sleep Disorder": 28.858378758190874,
+            "Encephalitis": 31.024763937016985,
+            "Traumatic Brain Injury": 45.86654038810916
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:46:32",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "219a03dc-74d5-49dd-ada2-185c05e2bc37",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:46:32"
+    },
+    {
+        "spectrogram_id": "21453434",
+        "predictions": {
+            "seizure_vote": 1.5790787534746713,
+            "lpd_vote": 1.9445359818639263,
+            "gpd_vote": 1.076030675327279,
+            "lrda_vote": 0.6493835417662274,
+            "grda_vote": 0.5717067946762701,
+            "other_vote": 3.858939108000429
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.5790787534746713,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.5790787534746713,
+                "weighted_mean": 1.5790787534746713,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 3.541051269285096,
+                "xgb": 1.2143906354904175,
+                "lgb": 1.0781660408162657,
+                "mean": 1.9445359818639263,
+                "weighted_mean": 1.9445359818639263,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 1.912682138341917,
+                "xgb": 0.22040267288684845,
+                "lgb": 1.0950072147530723,
+                "mean": 1.076030675327279,
+                "weighted_mean": 1.076030675327279,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.5236688397230841,
+                "xgb": 0.20065690577030182,
+                "lgb": 1.2238248798052964,
+                "mean": 0.6493835417662274,
+                "weighted_mean": 0.6493835417662274,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0.5859139190164716,
+                "xgb": 0.2818843126296997,
+                "lgb": 0.8473221523826387,
+                "mean": 0.5717067946762701,
+                "weighted_mean": 0.5717067946762701,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 8.232770784051635,
+                "xgb": 0.6693351864814758,
+                "lgb": 2.674711353468177,
+                "mean": 3.858939108000429,
+                "weighted_mean": 3.858939108000429,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 16.313344994653974,
+            "lpd": 20.088856402419612,
+            "gpd": 11.116392765603738,
+            "lrda": 6.708733004843561,
+            "grda": 5.906260315908553,
+            "other": 39.866412516570556
+        },
+        "most_likely": "other",
+        "confidence": 39.866412516570556,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 31.581575069493425,
+            "Sleep Disorder": 21.52061350654558,
+            "Encephalitis": 38.89071963727852,
+            "Traumatic Brain Injury": 47.37236260424014
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:48:42",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "c79209c8-bfd8-4f9c-84fe-dbcc576abd53",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:48:42"
+    },
+    {
+        "spectrogram_id": "1910466",
+        "predictions": {
+            "seizure_vote": 1.4850502512176598,
+            "lpd_vote": 1.2844151311304934,
+            "gpd_vote": 0.8298079805418211,
+            "lrda_vote": 0.5527781388063088,
+            "grda_vote": 0.589689563039565,
+            "other_vote": 4.180923103974286
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.4850502512176598,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.4850502512176598,
+                "weighted_mean": 1.4850502512176598,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 3.0839906270994404,
+                "xgb": 0.14307063817977905,
+                "lgb": 0.626184128112261,
+                "mean": 1.2844151311304934,
+                "weighted_mean": 1.2844151311304934,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 1.9344718013027196,
+                "xgb": 0.07595159858465195,
+                "lgb": 0.47900054173809176,
+                "mean": 0.8298079805418211,
+                "weighted_mean": 0.8298079805418211,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.5391366033345006,
+                "xgb": 0.8489620685577393,
+                "lgb": 0.2702357445266864,
+                "mean": 0.5527781388063088,
+                "weighted_mean": 0.5527781388063088,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0.6005847214283455,
+                "xgb": 0.2262400984764099,
+                "lgb": 0.9422438692139397,
+                "mean": 0.589689563039565,
+                "weighted_mean": 0.589689563039565,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 8.158494854306799,
+                "xgb": 1.8842933177947998,
+                "lgb": 2.499981139821258,
+                "mean": 4.180923103974286,
+                "weighted_mean": 4.180923103974286,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 0.16643574420579582,
+            "lpd": 0.14394973371682654,
+            "gpd": 0.0930000238551821,
+            "lrda": 0.06195213989391003,
+            "grda": 0.06608895638003272,
+            "other": 0.4685734019482527
+        },
+        "most_likely": "other",
+        "confidence": 46.85734019482527,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 29.701005024353194,
+            "Sleep Disorder": 16.596159610836423,
+            "Encephalitis": 29.701005024353194,
+            "Traumatic Brain Injury": 38.5324539339148
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:51:19",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "635dc5fb-8ce9-45e0-b9e2-d45d5957abb5",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:51:19"
+    },
+    {
+        "spectrogram_id": "1910466",
+        "predictions": {
+            "seizure_vote": 1.4850502512176598,
+            "lpd_vote": 1.2844151311304932,
+            "gpd_vote": 0.8298079805418211,
+            "lrda_vote": 0.5527781388063088,
+            "grda_vote": 0.589689563039565,
+            "other_vote": 4.180923103974286
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.4850502512176598,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.4850502512176598,
+                "weighted_mean": 1.4850502512176598,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 3.0839906270994395,
+                "xgb": 0.14307063817977905,
+                "lgb": 0.626184128112261,
+                "mean": 1.2844151311304932,
+                "weighted_mean": 1.2844151311304932,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 1.9344718013027196,
+                "xgb": 0.07595159858465195,
+                "lgb": 0.47900054173809176,
+                "mean": 0.8298079805418211,
+                "weighted_mean": 0.8298079805418211,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.5391366033345006,
+                "xgb": 0.8489620685577393,
+                "lgb": 0.2702357445266864,
+                "mean": 0.5527781388063088,
+                "weighted_mean": 0.5527781388063088,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0.6005847214283455,
+                "xgb": 0.2262400984764099,
+                "lgb": 0.9422438692139397,
+                "mean": 0.589689563039565,
+                "weighted_mean": 0.589689563039565,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 8.158494854306799,
+                "xgb": 1.8842933177947998,
+                "lgb": 2.499981139821258,
+                "mean": 4.180923103974286,
+                "weighted_mean": 4.180923103974286,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 0.16643574420579582,
+            "lpd": 0.1439497337168265,
+            "gpd": 0.0930000238551821,
+            "lrda": 0.06195213989391003,
+            "grda": 0.06608895638003272,
+            "other": 0.4685734019482527
+        },
+        "most_likely": "other",
+        "confidence": 46.85734019482527,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 29.701005024353194,
+            "Sleep Disorder": 16.596159610836423,
+            "Encephalitis": 29.701005024353194,
+            "Traumatic Brain Injury": 38.532453933914795
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:51:30",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "30e9f93d-06fe-4b36-808a-dc58f8e4f979",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:51:30"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 1.5846714750639253,
+            "lpd_vote": 1.943337061377743,
+            "gpd_vote": 1.954935415908711,
+            "lrda_vote": 0.455848227684583,
+            "grda_vote": 0.6098816829911445,
+            "other_vote": 5.749704787919684
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.5846714750639253,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.5846714750639253,
+                "weighted_mean": 1.5846714750639253,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 3.5264495777535023,
+                "xgb": 0.36022454500198364,
+                "lgb": -0.581952709381967,
+                "mean": 1.943337061377743,
+                "weighted_mean": 1.943337061377743,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 1.963710771231215,
+                "xgb": 1.9395052194595337,
+                "lgb": 1.961590257035384,
+                "mean": 1.954935415908711,
+                "weighted_mean": 1.954935415908711,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.5239071463443552,
+                "xgb": 0.3877893090248108,
+                "lgb": -0.17359915028533418,
+                "mean": 0.455848227684583,
+                "weighted_mean": 0.455848227684583,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0.5886273629605111,
+                "xgb": 0.7460576295852661,
+                "lgb": 0.49496005642765617,
+                "mean": 0.6098816829911445,
+                "weighted_mean": 0.6098816829911445,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 8.570120267451879,
+                "xgb": 5.719785213470459,
+                "lgb": 2.959208882836714,
+                "mean": 5.749704787919684,
+                "weighted_mean": 5.749704787919684,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 0.12885206416555228,
+            "lpd": 0.1580157121953871,
+            "gpd": 0.15895879216227982,
+            "lrda": 0.037065717410605714,
+            "grda": 0.04959041352530177,
+            "other": 0.46751730054087337
+        },
+        "most_likely": "other",
+        "confidence": 46.75173005408734,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 31.693429501278505,
+            "Sleep Disorder": 39.09870831817422,
+            "Encephalitis": 38.86674122755486,
+            "Traumatic Brain Injury": 47.54014425191776
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:51:38",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "7838aa40-8c6f-4653-bf90-39d40ea0342d",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:51:38"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 1.5846714750639257,
+            "lpd_vote": 1.943337061377743,
+            "gpd_vote": 1.9549354159087107,
+            "lrda_vote": 0.45584822768458305,
+            "grda_vote": 0.6098816829911444,
+            "other_vote": 5.749704787919684
+        },
+        "individual_model_predictions": {
+            "seizure_vote": {
+                "rf": 1.5846714750639257,
+                "xgb": 0,
+                "lgb": 0,
+                "mean": 1.5846714750639257,
+                "weighted_mean": 1.5846714750639257,
+                "majority_vote": 0
+            },
+            "lpd_vote": {
+                "rf": 3.5264495777535023,
+                "xgb": 0.36022454500198364,
+                "lgb": -0.581952709381967,
+                "mean": 1.943337061377743,
+                "weighted_mean": 1.943337061377743,
+                "majority_vote": 0
+            },
+            "gpd_vote": {
+                "rf": 1.9637107712312143,
+                "xgb": 1.9395052194595337,
+                "lgb": 1.961590257035384,
+                "mean": 1.9549354159087107,
+                "weighted_mean": 1.9549354159087107,
+                "majority_vote": 0
+            },
+            "lrda_vote": {
+                "rf": 0.5239071463443553,
+                "xgb": 0.3877893090248108,
+                "lgb": -0.17359915028533418,
+                "mean": 0.45584822768458305,
+                "weighted_mean": 0.45584822768458305,
+                "majority_vote": 0
+            },
+            "grda_vote": {
+                "rf": 0.588627362960511,
+                "xgb": 0.7460576295852661,
+                "lgb": 0.49496005642765617,
+                "mean": 0.6098816829911444,
+                "weighted_mean": 0.6098816829911444,
+                "majority_vote": 0
+            },
+            "other_vote": {
+                "rf": 8.570120267451879,
+                "xgb": 5.719785213470459,
+                "lgb": 2.959208882836714,
+                "mean": 5.749704787919684,
+                "weighted_mean": 5.749704787919684,
+                "majority_vote": 1
+            }
+        },
+        "model_info": {
+            "rf": {
+                "full_name": "Random Forest",
+                "weight": 1.0
+            },
+            "xgb": {
+                "full_name": "XGBoost",
+                "weight": 1.0
+            },
+            "lgb": {
+                "full_name": "LightGBM",
+                "weight": 1.0
+            }
+        },
+        "probabilities": {
+            "seizure": 0.12885206416555234,
+            "lpd": 0.1580157121953871,
+            "gpd": 0.1589587921622798,
+            "lrda": 0.03706571741060572,
+            "grda": 0.04959041352530175,
+            "other": 0.46751730054087337
+        },
+        "most_likely": "other",
+        "confidence": 46.75173005408734,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 31.693429501278516,
+            "Sleep Disorder": 39.09870831817421,
+            "Encephalitis": 38.86674122755486,
+            "Traumatic Brain Injury": 47.54014425191777
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-21 23:52:17",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "f588bd55-d6b2-4e71-a4be-985ce4d55d6c",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-21 23:52:17"
+    },
+    {
+        "spectrogram_id": "34196486",
+        "predictions": {
+            "seizure_vote": 0.2574476427746162,
+            "lpd_vote": 0.7647546370578475,
+            "gpd_vote": 0.13866342209468013,
+            "lrda_vote": 0.0964476450610163,
+            "grda_vote": 1.9881944994726317,
+            "other_vote": 1.6321853617822035
+        },
+        "probabilities": {
+            "seizure": 5.278061406968889,
+            "lpd": 15.678612910001396,
+            "gpd": 2.8428073717376825,
+            "lrda": 1.9773208552359514,
+            "grda": 40.76095839961209,
+            "other": 33.46223905644399
+        },
+        "most_likely": "grda",
+        "confidence": 40.76095839961209,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 5.148952855492324,
+            "Sleep Disorder": 39.763889989452636,
+            "Encephalitis": 15.29509274115695,
+            "Traumatic Brain Injury": 7.723429283238485
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-22 00:33:50",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "0833e46a-5657-49a7-a179-5e11b7d08a3d",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-22 00:33:50"
+    },
+    {
+        "spectrogram_id": "15428069",
+        "predictions": {
+            "seizure_vote": 0.6430731743528777,
+            "lpd_vote": 7.767539639611622,
+            "gpd_vote": 0.16701242816951667,
+            "lrda_vote": 0.41408279315060914,
+            "grda_vote": 0.36347722782626113,
+            "other_vote": 1.7414039113803292
+        },
+        "probabilities": {
+            "seizure": 5.795232789469859,
+            "lpd": 69.99934409996544,
+            "gpd": 1.505078953030396,
+            "lrda": 3.731622272747563,
+            "grda": 3.2755761442608033,
+            "other": 15.693145740525926
+        },
+        "most_likely": "lpd",
+        "confidence": 69.99934409996544,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 12.861463487057554,
+            "Sleep Disorder": 7.269544556525222,
+            "Encephalitis": 95,
+            "Traumatic Brain Injury": 19.29219523058633
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "eeg_spectrogram_path": null,
+        "timestamp": "2025-03-22 00:41:32",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "5098b2c5-bdc9-4eaa-b016-1071fd155972",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-22 00:41:32"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 0.6810719850252805,
+            "lpd_vote": 1.0443227079867372,
+            "gpd_vote": 0.40401248304766574,
+            "lrda_vote": 0.6409779716314992,
+            "grda_vote": 0.9383381203407936,
+            "other_vote": 5.074363595822901
+        },
+        "probabilities": {
+            "seizure": 7.75435784232196,
+            "lpd": 11.890155752466125,
+            "gpd": 4.599891693093714,
+            "lrda": 7.297866701846273,
+            "grda": 10.683466244679256,
+            "other": 57.774261765592684
+        },
+        "most_likely": "other",
+        "confidence": 57.774261765592684,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 13.621439700505611,
+            "Sleep Disorder": 18.76676240681587,
+            "Encephalitis": 20.886454159734743,
+            "Traumatic Brain Injury": 20.432159550758417
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "eeg_spectrogram_path": null,
+        "timestamp": "2025-03-22 21:10:10",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123"
+        },
+        "id": "f7355379-42d4-465e-988b-53eff8c2f188",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-22 21:10:10"
+    },
+    {
+        "spectrogram_id": "51346992",
+        "predictions": {
+            "seizure_vote": 3.1115916793629825,
+            "lpd_vote": 0.4216379014309193,
+            "gpd_vote": 0.28038791812450925,
+            "lrda_vote": 0.09199973158386653,
+            "grda_vote": 0.1415320521111201,
+            "other_vote": 1.5749640002518441
+        },
+        "probabilities": {
+            "seizure": 55.34558844351848,
+            "lpd": 7.499633682515139,
+            "gpd": 4.987233519094317,
+            "lrda": 1.636390569792645,
+            "grda": 2.517417294711465,
+            "other": 28.013736490367958
+        },
+        "most_likely": "seizure",
+        "confidence": 55.34558844351848,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 62.23183358725965,
+            "Sleep Disorder": 5.607758362490185,
+            "Encephalitis": 62.23183358725965,
+            "Traumatic Brain Injury": 12.649137042927578
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-25 22:31:37",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "bf945c2c-3764-4a15-aa5c-c8d3756e23f4",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-25 22:31:37"
+    },
+    {
+        "spectrogram_id": "853520",
+        "predictions": {
+            "seizure_vote": 0.6810719850252807,
+            "lpd_vote": 1.0443227079867372,
+            "gpd_vote": 0.4040124830476657,
+            "lrda_vote": 0.6409779716314992,
+            "grda_vote": 0.9383381203407937,
+            "other_vote": 5.074363595822901
+        },
+        "probabilities": {
+            "seizure": 7.75435784232196,
+            "lpd": 11.890155752466123,
+            "gpd": 4.5998916930937135,
+            "lrda": 7.297866701846272,
+            "grda": 10.683466244679254,
+            "other": 57.77426176559267
+        },
+        "most_likely": "other",
+        "confidence": 57.77426176559267,
+        "clinical_info": {
+            "lpd": {
+                "name": "Lateralized Periodic Discharges (LPD)",
+                "description": "One-sided periodic electrical activity",
+                "associated_with": [
+                    "Stroke",
+                    "Brain tumors",
+                    "Infections",
+                    "Traumatic Brain Injury"
+                ]
+            },
+            "gpd": {
+                "name": "Generalized Periodic Discharges (GPD)",
+                "description": "Affects whole brain",
+                "associated_with": [
+                    "Severe infections",
+                    "Drug overdose",
+                    "Oxygen deprivation",
+                    "Metabolic disorders"
+                ]
+            },
+            "lrda": {
+                "name": "Lateralized Rhythmic Delta Activity (LRDA)",
+                "description": "Slow waves on one side of brain",
+                "associated_with": [
+                    "Early stroke",
+                    "Brain tumors",
+                    "Epilepsy",
+                    "Focal brain dysfunction"
+                ]
+            },
+            "grda": {
+                "name": "Generalized Rhythmic Delta Activity (GRDA)",
+                "description": "Widespread slow brain activity",
+                "associated_with": [
+                    "Sleep disorders",
+                    "Drug effects",
+                    "Brain inflammation",
+                    "Metabolic disorders"
+                ]
+            },
+            "seizure": {
+                "name": "Seizure",
+                "description": "Sudden, uncontrolled electrical brain disturbance",
+                "associated_with": [
+                    "Epilepsy",
+                    "Brain injury",
+                    "Stroke",
+                    "Infection"
+                ]
+            },
+            "other": {
+                "name": "Other Abnormal Pattern",
+                "description": "Unusual brain activity patterns",
+                "associated_with": [
+                    "Various neurological conditions"
+                ]
+            }
+        },
+        "disease_confidence": {
+            "Epilepsy": 13.621439700505613,
+            "Sleep Disorder": 18.76676240681587,
+            "Encephalitis": 20.886454159734743,
+            "Traumatic Brain Injury": 20.43215955075842
+        },
+        "disease_info": {
+            "Epilepsy": "Neurological disorder characterized by recurrent seizures",
+            "Sleep Disorder": "Conditions affecting sleep quality and patterns",
+            "Parkinson's Disease": "Progressive nervous system disorder affecting movement",
+            "Dementia": "Decline in cognitive function affecting daily activities",
+            "Encephalitis": "Inflammation of the brain, often due to infection",
+            "Traumatic Brain Injury": "Brain damage from external mechanical force"
+        },
+        "timestamp": "2025-03-26 10:20:18",
+        "user_info": {
+            "created_at": "2025-03-14 14:04:55",
+            "email": "demo@example.com",
+            "id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+            "name": "demo",
+            "password": "password123",
+            "patient_name": "",
+            "patient_age": "",
+            "patient_gender": ""
+        },
+        "id": "fabb0e67-25e7-432b-9248-8e7a02661bb2",
+        "user_id": "53ee5a07-6ff9-4619-964d-68be3704567e",
+        "created_at": "2025-03-26 10:20:18"
+    }
+]
